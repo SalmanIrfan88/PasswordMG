@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+     Password manager
+{% endblock %}
+
+{% block main %}
+<form action="/save" method="post">
+     <div class="form-group">
+         <input autocomplete="off" autofocus class="form-control" name="platform" placeholder="Add Platform" type="text">
+     </div>
+     <div class="form-group">
+         <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Add Username" type="text">
+     </div>
+     <div class="form-group">
+         <input class="form-control" name="email" placeholder="Add email" type="email">
+     </div>
+       <div class="form-group">
+         <input class="form-control" name="password" placeholder="Add Password" type="text">
+     </div>
+     <button class="btn btn-primary" type="submit">Save Details</button>
+ </form>
+
+{% endblock %}
